@@ -1,67 +1,53 @@
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
     <meta charset="UTF-8">
+    <title>Teia & Vlad - 12.09.2026</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teia & Vlad – Nunta</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script defer src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="password-screen">
-        <h2>Te rugăm introdu parola pentru a accesa invitația</h2>
-        <input type="password" id="password" placeholder="Parola">
-        <button onclick="checkPassword()">Accesează</button>
-        <p id="error-message"></p>
+    <section class="hero">
+        <h1>Teia & Vlad</h1>
+        <p>Ne căsătorim pe 12 septembrie 2026</p>
+        <div id="countdown"></div>
+    </section>
+
+    <section class="gallery">
+        <h2>Galerie</h2>
+        <img src="img1.jpg" alt="Teia și Vlad">
+        <img src="img2.jpg" alt="Cuplu">
+        <img src="img3.jpg" alt="Logodnă">
+    </section>
+
+    <section class="rsvp">
+        <h2>Confirmare prezență</h2>
+        <form>
+            <label>Nume:</label><input type="text"><br>
+            <label>Vii:</label>
+            <select>
+                <option>Singur(ă)</option>
+                <option>Cu însoțitor</option>
+                <option>Cu copii</option>
+            </select><br>
+            <label>Alergii alimentare:</label><input type="text"><br>
+            <button type="submit">Confirmă</button>
+        </form>
+    </section>
+
+    <section class="map">
+        <h2>Locație</h2>
+        <iframe src="https://maps.google.com/maps?q=Urbo%20Parc%20Bacau&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;"></iframe>
+    </section>
+
+    <!-- Muzică fundal YouTube -->
+    <div style="display:none;">
+      <iframe width="0" height="0"
+        src="https://www.youtube.com/embed/tkH8RoxjjPE?autoplay=1&loop=1&playlist=tkH8RoxjjPE&mute=1"
+        frameborder="0" allow="autoplay"></iframe>
     </div>
 
-    <div id="site-content" style="display:none;">
-        <header>
-            <h1>Teia & Vlad</h1>
-            <p>12 septembrie 2026</p>
-        </header>
-
-        <section>
-            <h2>Petrecerea</h2>
-            <p>Restaurant Urbo Parc Bacău – ora 19:00</p>
-        </section>
-
-        <section>
-            <h2>Galerie</h2>
-            <div class="gallery">
-                <img src="assets/images/78887DA9-DC4A-44B8-9EE9-CF2660C7E2F0.jpeg" alt="Poza 1">
-                <img src="assets/images/23E49BB9-9371-401B-9A3C-7A72AE8E5265.jpeg" alt="Poza 2">
-                <img src="assets/images/E14C5431-DA1E-4160-BDEF-8CBD2DE99771.jpeg" alt="Poza 3">
-            </div>
-        </section>
-
-        <section>
-            <h2>Confirmare Participare</h2>
-            <form action="https://formspree.io/f/mwkgbepn" method="POST">
-                <input type="text" name="Nume" placeholder="Numele tău" required>
-                <select name="Prezență">
-                    <option>Vin</option>
-                    <option>Nu pot veni</option>
-                </select>
-                <select name="Însoțitori">
-                    <option>Singur(ă)</option>
-                    <option>Cu însoțitor</option>
-                    <option>Cu copii</option>
-                </select>
-                <input type="text" name="Alergii" placeholder="Alergii alimentare (opțional)">
-                <button type="submit">Trimite</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Locație</h2>
-            <iframe src="https://www.google.com/maps?q=Urbo+Parc+Bacau&output=embed" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
-        </section>
-
-        <section>
-            <h2>Countdown</h2>
-            <div id="countdown"></div>
-        </section>
-    </div>
+    <script src="script.js"></script>
 </body>
 </html>

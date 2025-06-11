@@ -1,0 +1,28 @@
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #fdf6f6;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.gallery, .rsvp, .map {
+    padding: 20px;
+    text-align: center;
+}
+.gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+button {
+    background-color: #800020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
