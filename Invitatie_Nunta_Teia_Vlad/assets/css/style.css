@@ -1,0 +1,46 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #800020;
+    color: white;
+    padding: 40px 10px;
+}
+.gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+}
+form {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+}
+button {
+    background-color: #800020;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #a83232;
+}
+#password-screen {
+    text-align: center;
+    padding: 40px;
+}
+#error-message {
+    color: red;
+}
