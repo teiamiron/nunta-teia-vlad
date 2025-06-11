@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teia & Vlad – Nunta</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="password-screen">
+        <h2>Te rugăm introdu parola pentru a accesa invitația</h2>
+        <input type="password" id="password" placeholder="Parola">
+        <button onclick="checkPassword()">Accesează</button>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="site-content" style="display:none;">
+        <header>
+            <h1>Teia & Vlad</h1>
+            <p>12 septembrie 2026</p>
+        </header>
+
+        <section>
+            <h2>Petrecerea</h2>
+            <p>Restaurant Urbo Parc Bacău – ora 19:00</p>
+        </section>
+
+        <section>
+            <h2>Galerie</h2>
+            <div class="gallery">
+                <img src="assets/images/78887DA9-DC4A-44B8-9EE9-CF2660C7E2F0.jpeg" alt="Poza 1">
+                <img src="assets/images/23E49BB9-9371-401B-9A3C-7A72AE8E5265.jpeg" alt="Poza 2">
+                <img src="assets/images/E14C5431-DA1E-4160-BDEF-8CBD2DE99771.jpeg" alt="Poza 3">
+            </div>
+        </section>
+
+        <section>
+            <h2>Confirmare Participare</h2>
+            <form action="https://formspree.io/f/mwkgbepn" method="POST">
+                <input type="text" name="Nume" placeholder="Numele tău" required>
+                <select name="Prezență">
+                    <option>Vin</option>
+                    <option>Nu pot veni</option>
+                </select>
+                <select name="Însoțitori">
+                    <option>Singur(ă)</option>
+                    <option>Cu însoțitor</option>
+                    <option>Cu copii</option>
+                </select>
+                <input type="text" name="Alergii" placeholder="Alergii alimentare (opțional)">
+                <button type="submit">Trimite</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Locație</h2>
+            <iframe src="https://www.google.com/maps?q=Urbo+Parc+Bacau&output=embed" width="100%" height="300" style="border:0;" allowfullscreen></iframe>
+        </section>
+
+        <section>
+            <h2>Countdown</h2>
+            <div id="countdown"></div>
+        </section>
+    </div>
+</body>
+</html>
